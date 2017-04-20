@@ -106,11 +106,11 @@ set $youtube_tv_class "crx_kcpnkoekefdeknbkepdmbefkakdnnolk"
 
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1browser
+bindsym $mod+1 workspace $ws1browser layout tabbed
 bindsym $mod+2 workspace $ws2droid
 bindsym $mod+3 workspace $ws3console
 bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace $ws5ytTV
+bindsym $mod+5 workspace $ws5ytTV fullscreen enable
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
