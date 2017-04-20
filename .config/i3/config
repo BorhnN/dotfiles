@@ -101,10 +101,14 @@ set $ws1browser "1:"
 set $ws5ytTV "5:"
 set $ws2droid "2:"
 set $ws3console "3:"
+set $ws8trello "8:"
 set $ws9communicate "9:"
 	#Other variables
 set $youtube_tv_class "crx_kcpnkoekefdeknbkepdmbefkakdnnolk"
 set $skype_instance_chrome "crx_oonccmmafcaodljbcgobdbknmbljiafh"
+set $hangouts_instance "crx_nckgahadagoaajjgafhacjanaoiihapd"
+set $trello_instance "crx_jijnmpkkfkjaihbhffejemnpbbglahim"
+set $gmail_offline_instance "crx_ejidjjhkpiempkbhmpbfngldlkglhimk"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1browser layout tabbed
@@ -114,7 +118,7 @@ bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace $ws5ytTV fullscreen enable
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
+bindsym $mod+8 workspace $ws8trello
 bindsym $mod+9 workspace $ws9communicate
 bindsym $mod+0 workspace 10
 
@@ -126,7 +130,7 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace $ws5ytTV
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+8 move container to workspace $ws8trello
 bindsym $mod+Shift+9 move container to workspace $ws9communicate
 bindsym $mod+Shift+0 move container to workspace 10
 
@@ -134,6 +138,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 assign [instance=$youtube_tv_class] $ws5ytTV
 assign [class="jetbrains-studio"] $ws2droid
 assign [instance=$skype_instance_chrome] $ws9communicate
+assign [instance=$hangouts_instance] $ws9communicate
+assign [instance=$gmail_offline_instance] $ws9communicate
+assign [instance=$trello_instance] $ws8trello
 
 # border for windows
 for_window [class="^.*"] border pixel 1
