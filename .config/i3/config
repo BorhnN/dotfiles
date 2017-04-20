@@ -142,8 +142,7 @@ assign [instance=$hangouts_instance] $ws9communicate
 assign [instance=$gmail_offline_instance] $ws9communicate
 assign [instance=$trello_instance] $ws8trello
 
-# border for windows
-for_window [class="^.*"] border pixel 1
+# border for windows 
 for_window [class="URxvt"] border normal 1
 
 # reload the configuration file
